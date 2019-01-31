@@ -97,6 +97,21 @@ Please check [FAQ](g3doc/faq.md) for frequently asked questions before
 reporting an issue.
 
 
+## My notebook
+
+### Build protoc
+[Download protoc](https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip),unzip to protoc folder, and set protoc folder under research folder.
+```
+./protoc/bin/protoc object_detection/protos/*.proto --python_out=.
+```
+```
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+```
+```
+python object_detection/builders/model_builder_test.py
+```
+test on tenserflow 1.9.0
+
 ## Release information
 
 ### Sep 17, 2018
