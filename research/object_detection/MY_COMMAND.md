@@ -60,10 +60,10 @@ python object_detection/export_inference_graph.py \
 # =========================================================================== #
 ```
 python object_detection/export_tflite_ssd_graph.py \
-						--pipeline_config_path=object_detection/project_images/boxes/config/ssd_mobilenet_v2.config \
-						--trained_checkpoint_prefix=object_detection/project_images/boxes/logs/model.ckpt-7386 \
-						--output_directory=object_detection/project_images/boxes/logs/tflite \
-						--add_postprocessing_op=true
+				--pipeline_config_path=object_detection/project_images/boxes/config/ssd_mobilenet_v2.config \
+				--trained_checkpoint_prefix=object_detection/project_images/boxes/logs/model.ckpt-7386 \
+				--output_directory=object_detection/project_images/boxes/logs/tflite \
+				--add_postprocessing_op=true
 ```
 
 # =========================================================================== #
